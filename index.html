@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Moreira - Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo"> Thiago Moreira </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about"> Sobre</a></li>
+                    <li><a href="#experience"> Habilidades</a></li>
+                    <li><a href="#projects"> Projetos</a></li>
+                    <li><a href="#contact"> Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <nav id="hamburguer-nav"> 
+            <div class="logo"> Thiago Moreira </div>
+            <div class="hamburguer-menu">
+                <div class="hamburguer-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()"> Sobre</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()"> Habilidades</a></li>
+                    <li><a href="#projetos" onclick="toggleMenu()"> Projetos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()"> Contato</a></li>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Thiago Moreira Foto">
+            </div>
+            
+            <div class="section__text">
+                <p class="section__text__p1">Olá, eu sou</p>
+                <h1 class="title">Thiago Moreira</h1>
+                <p class="section__text__p2">Desenvolvedor Web</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href=./#contact()"> Contatos</button>
+                </div>
+
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="Perfil linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/thiago-moreira-a7b604198/'">
+                    <img src="./assets/github.png" alt="Perfil github" class="icon" onclick="location.href='https://github.com/ThiagoMoreira2356'">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1"> Conheça seu novo Dev</p>
+            <h1 class="title"> Sobre mim</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.png" alt="Imagem sobre" class="about-pic">
+                </div>
+
+                <div class="about-details-container">
+                    <div class="about-containers">
+                         <div class="details-container">
+                            <img src="./assets/experience.png" alt=" Experiencias icone" class="icon">
+                            <h3>Experiências</h3>
+                            <p>Desenvolvimento Web</p>
+                            <p>SQL Server</p>
+                            <p>Suporte ao usuário</p>
+                         </div>
+
+                         <div class="details-container">
+                            <img src="./assets/education.png" alt=" Formação icone" class="icon">
+                            <h3>Formação</h3>
+                            <p>FAM - Análise e Desenvolvimento de Sistemas</p>
+            
+                         </div>
+
+                    </div>
+                    <div class="text-container">
+                            <p>Minha jornada no desenvolvimento web é movida pela paixão por tecnologia e pelo desejo de criar soluções online eficazes. Possuo proficiência em HTML, CSS e JavaScript, aplicando esses conhecimentos para agregar valor e funcionalidade aos seus projetos digitais.</p>
+                         </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="seta icone" class="arrow icon" onclick="location.href=./#experience">
+        </section>
+
+        <section id="experience">
+            <p class="section__text__p1">Minhas</p>
+            <h1 class="title"> Habilidades</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend</h2>
+                        <div class="article-container"> 
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>HTML</h3>
+                                     <p>Avançado</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>CSS</h3>
+                                     <p>Avançado</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>JavaScript</h3>
+                                     <p>Intermediário</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>Wordpress</h3>
+                                     <p>Intermediário</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>UI/UX</h3>
+                                     <p>Intermediário</p>
+                                 </div>
+                            </article>
+                        </div>
+                    </div>
+                        <div class="details-container">
+                        <h2 class="experience-sub-title">Backend</h2>
+                        <div class="article-container"> 
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>PostgresSQL</h3>
+                                     <p>Avançado</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>SQL Server</h3>
+                                     <p>Avançado</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>Node JS</h3>
+                                     <p>Intermediário</p>
+                                 </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="experiencia icone" class="icon">
+                                 <div>
+                                     <h3>Git</h3>
+                                     <p>Intermediário</p>
+                                 </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="seta icone" class="arrow icon" onclick="location.href=./#projects">
+        </section>
+
+        <section id="projects">
+                <p class="section__text__p1">Veja</p>
+                <h1 class="title">Meus Projetos</h1>
+                <div  class="experience-details-container">
+                    <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png" alt="project pic" class="project-img">
+
+                        </div>
+                        <h2 class="experience-sub-title project-title"> Tom Jazz School</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href'https://github.com/ThiagoMoreira2356/Pagina-Html-Tom-Jazz'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href'https://willowy-lebkuchen-c27149.netlify.app/'">
+                                Site
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="project pic" class="project-img">
+
+                        </div>
+                        <h2 class="experience-sub-title project-title"> Simple Finance</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href'https://github.com/ThiagoMoreira2356/Pagina-Html-Tom-Jazz'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href'https://github.com/ThiagoMoreira2356/Pagina-Html-Tom-Jazz'">
+                                Site
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <img src="./assets/arrow.png" alt="seta icone" class="arrow icon" onclick="location.href=./#projects">
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">Aqui estão</p>
+            <h1 class="title">Meus contatos</h1>
+
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="emails" class="icon email-icon">
+                    <p><a href="mailto:thiago.moreira.job@gmail.com"> thiago.moreira.job@gmail.com</a></p>
+                </div>
+                                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="linkedin" class="icon">
+                    <p><a href="https://www.linkedin.com/in/thiago-moreira-a7b604198/">Linkedin</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about"> Sobre</a></li>
+                    <li><a href="#experience"> Habilidades</a></li>
+                    <li><a href="#projetos"> Projetos</a></li>
+                    <li><a href="#contact"> Contato</a></li>
+                </ul>
+        </nav>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
